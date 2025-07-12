@@ -1,3 +1,10 @@
+body
+{
+    padding-top: 120px;
+    margin: 0px;
+    padding-right: 40px;
+}
+
 .video-grid
 {
     display: grid;
@@ -20,8 +27,6 @@
 .thumbnail
 {
     width: 100%;
-
-
 }
 
 .video-info
