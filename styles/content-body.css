@@ -5,6 +5,7 @@ body
     margin: 0px;
     padding-right: 40px;
     background-color: rgb(243, 240, 240);
+    font-family: Roboto, Arial;
 }
 
 .video-grid
@@ -15,31 +16,7 @@ body
     row-gap: 20px;
 }
 
-/*Media queries are a part of responsive web design -> allow you to create different layouts 
-depending on the size of the viewport.*/
-@media (max-width: 600px)
-{
-    .video-grid
-    {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
-@media(min-width: 601px) and (max-width: 999px)
-{
-    .video-grid
-    {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (min-width: 1000px)
-{
-    .video-grid
-    {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
 
 
 
@@ -164,4 +141,48 @@ depending on the size of the viewport.*/
     color: gray;
     font-size: 12px;
     margin-bottom: 4px;
+}
+
+/*Media queries are a part of responsive web design -> allow you to create different layouts 
+depending on the size of the viewport.*/
+@media (max-width: 600px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .video-title
+    {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 4px;
+    }
+    
+    .video-author
+    {
+        font-size: 10px;
+    }
+
+    .video-stats
+    {
+        font-size: 8px;
+    }
+}
+
+@media(min-width: 601px) and (max-width: 999px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
 }
