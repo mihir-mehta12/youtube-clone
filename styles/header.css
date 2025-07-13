@@ -224,8 +224,9 @@
     border-radius: 25px;
 }
 
-.pfp-container
+.channel-pfp-container
 {
     cursor: pointer;
+    position: relative;
 }
 
