@@ -15,6 +15,34 @@ body
     row-gap: 20px;
 }
 
+/*Media queries are a part of responsive web design -> allow you to create different layouts 
+depending on the size of the viewport.*/
+@media (max-width: 600px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 601px) and (max-width: 999px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
 .video-element
 {
     width: 100%;
